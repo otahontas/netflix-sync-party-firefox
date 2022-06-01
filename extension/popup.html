@@ -2,100 +2,101 @@
 <html>
 
 <head>
-  <script src="popup.js"></script>
-  <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 
 <body>
 
-  <h1>Netflix Sync Party</h1>
+    <h1>Netflix Sync Party</h1>
 
-  <div id="synced-video-view">
-    <p id="scheduled-confirmation-text">
-      <span id="viewing-scheduled-text">
-        <span id="green-check">&#x2714;</span> Viewing scheduled video
-      </span>
-    </p>
-    <p>Scheduled sync party start time:
-      <br>
-      <b id="scheduled-start-time-gmt">
-      </b>
-    </p>
+    <div id="synced-video-view">
+        <p id="scheduled-confirmation-text">
+            <span id="viewing-scheduled-text">
+                <span id="green-check">&#x2714;</span> Viewing scheduled video
+            </span>
+        </p>
+        <p>Scheduled sync party start time:
+            <br>
+            <b id="scheduled-start-time-gmt">
+            </b>
+        </p>
 
-    <p>If the video is paused, it will start automatically at the scheduled start time</p>
+        <p>If the video is paused, it will start automatically at the scheduled start time</p>
 
-    <!-- <button id="resync">&#8634; Resync</button> -->
+        <!-- <button id="resync">&#8634; Resync</button> -->
 
-    <p>Share the link with everyone you want to watch with!</p>
+        <p>Share the link with everyone you want to watch with!</p>
 
-    <p>
-      <a id="watch-party-link-synced">
+        <p>
+            <a id="watch-party-link-synced">
 
-      </a>
-    </p>
+            </a>
+        </p>
 
-    <button id="copy-on-synced-url">Copy video link to clipboard</button>
+        <button id="copy-on-synced-url">Copy video link to clipboard</button>
 
-    <button id="leave-party-url">Desync video (leave party)</button>
-  </div>
-
-  <div id="unsynced-video-view">
-
-    <h2>Step 1</h2>
-
-    <p>
-      Make sure everyone you want to watch with has the extension:
-    </p>
-
-    <p>
-      <a id="extension-link" href="https://chrome.google.com/webstore/detail/netflix-sync-party/iglgjeoppncgpbbaildpifdnncgbpofl" target="_blank">
-        chrome.google.com/webstore/detail/netflix-sync-party/iglgjeoppncgpbbaildpifdnncgbpofl
-      </a>
-    </p>
-    <button id="copy-extension-link">Copy extension link to clipboard</button>
-
-    <h2>Step 2</h2>
-
-    <p id="start-time-select-prompt">Select a party start time</p>
-
-    <div id="start-time-select">
-      <span>Scheduled start time: &nbsp;</span>
-      <select id="time-selector-dropdown">
-        <option disabled selected value> -- select an option -- </option>
-        <option value="5">Immediately</option>
-        <option value="60">1 Minute from now</option>
-        <option value="120">2 Minutes from now</option>
-        <option value="180">3 Minutes from now</option>
-        <option value="300">5 Minutes from now</option>
-        <option value="600">10 Minutes from now</option>
-        <option value="3600">1 Hour from now</option>
-      </select>
-      <b id="selected-start-time-gmt" hidden="true">
-      </b>
-      </select>
+        <button id="leave-party-url">Desync video (leave party)</button>
     </div>
 
-    <h2>Step 3</h2>
+    <div id="unsynced-video-view">
 
-    <p>Follow the link and share it with everyone you want to watch with!</p>
+        <h2>Step 1</h2>
 
-    <p>
-      <a id="watch-party-link" hidden="true">
+        <p>
+            Make sure everyone you want to watch with has the extension:
+        </p>
 
-      </a>
-    </p>
+        <p>
+            <a id="extension-link" href="https://github.com/otahontas/netflix-sync-party-firefox" target="_blank">
+                https://github.com/otahontas/netflix-sync-party-firefox
+            </a>
+        </p>
+        <button id="copy-extension-link">Copy extension link to clipboard</button>
 
-    <button id="copy-not-on-synced-url" hidden="true">Copy video link to clipboard</button>
+        <h2>Step 2</h2>
 
-  </div>
+        <p id="start-time-select-prompt">Select a party start time</p>
 
-  <div id="non-video-view">
-    <p>Start watching a video to use the extension!</p>
-  </div>
+        <div id="start-time-select">
+            <span>Scheduled start time: &nbsp;</span>
+            <select id="time-selector-dropdown">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="5">Immediately</option>
+                <option value="60">1 Minute from now</option>
+                <option value="120">2 Minutes from now</option>
+                <option value="180">3 Minutes from now</option>
+                <option value="300">5 Minutes from now</option>
+                <option value="600">10 Minutes from now</option>
+                <option value="3600">1 Hour from now</option>
+            </select>
+            <b id="selected-start-time-gmt" hidden="true">
+            </b>
+            </select>
+        </div>
 
-  <div>
-    <p id="warning">For best results, make sure you and everyone else in the party has the time and time zone on their<br>computer set as accurately as possible.</p>
-  </div>
+        <h2>Step 3</h2>
+
+        <p>Follow the link and share it with everyone you want to watch with!</p>
+
+        <p>
+            <a id="watch-party-link" hidden="true">
+
+            </a>
+        </p>
+
+        <button id="copy-not-on-synced-url" hidden="true">Copy video link to clipboard</button>
+
+    </div>
+
+    <div id="non-video-view">
+        <p>Start watching a video to use the extension!</p>
+    </div>
+
+    <div>
+        <p id="warning">For best results, make sure you and everyone else in the party has the time and time zone on
+            their<br>computer set as accurately as possible.</p>
+    </div>
 
 </body>
 
