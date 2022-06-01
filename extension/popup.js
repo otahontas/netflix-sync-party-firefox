@@ -8,7 +8,7 @@ function runOnNetflixTab(tab) {
 
   const USE_NETWORK_TIME = false; // TODO: FIX WITHIN POPUP
   const GMT_URL = 'https://worldtimeapi.org/api/timezone/Europe/London';
-  const EXTENSION_LINK = 'https://chrome.google.com/webstore/detail/netflix-sync-party/iglgjeoppncgpbbaildpifdnncgbpofl';
+  const EXTENSION_LINK = 'https://github.com/otahontas/netflix-sync-party-firefox'
 
   const MS_IN_SEC = 1000;
 
