@@ -2,15 +2,26 @@
   "name": "Netflix Sync Party",
   "version": "2022.1.2",
   "description": "Watch Netflix with friends - no ads, no queues, no login, no lag.",
-  "permissions": ["declarativeContent", "tabs"],
-  "content_scripts": [{
-    "matches": ["http://*.netflix.com/*", "https://*.netflix.com/*"],
-    "js": ["netflix-page-code.js"]
-  }],
+  "permissions": [
+    "tabs"
+  ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.netflix.com/*",
+        "https://*.netflix.com/*"
+      ],
+      "js": [
+        "netflix-page-code.js"
+      ]
+    }
+  ],
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
